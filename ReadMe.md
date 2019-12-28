@@ -10,6 +10,8 @@ Receive alerts every 30 minutes about the air quality of your private (or public
 
 You need an IFTT account so you can route your alert events how you would like. IFTT can be used to send you an email, push notification, and many other delivery methods.
 
+This script posts the values of the field name and value to the variables "Value1" and "Value2" respectively. You can use these values in the content of your email or push notification.
+
 ### A. Create a webhook in IFTTT
 Follow the first step here to get your ENV variables for your webook:
 https://medium.com/@flat/making-ifttt-work-with-apples-new-shortcuts-app-5530e50d4527
