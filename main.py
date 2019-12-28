@@ -1,7 +1,3 @@
-
-import platform
-print('version', platform.python_version())
-
 import app.ifttt as ifttt
 import app.purple_air as purple_air
 import config
