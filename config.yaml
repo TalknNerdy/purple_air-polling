@@ -1,7 +1,7 @@
 alert_value:
   default: 55
   pm_10: 10
-  age: 500
+  age: 1440 # Time in Minutes (24 hours = 1440 minutes)
 
 watch_fields:
   - pm
