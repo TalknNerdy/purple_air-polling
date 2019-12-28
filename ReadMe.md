@@ -6,11 +6,11 @@ Receive alerts every 30 minutes about the air quality of your private (or public
 
 ## Push notifications (iOS and Android)
 
-![Push notification example](assets/push.png)
+![Push notification example](assets/push.jpg)
 
 ## Email alerts
 
-![Email notificatio example](assets/email.jpg)
+![Email notificatio example](assets/email.png)
 
 # Quick Start
 
