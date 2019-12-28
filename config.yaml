@@ -9,7 +9,7 @@ alert_value:
   # p5: 10    # Particles >=5.0µm: count/dl
   # p6: 4     # Particles >=10.0µm:count/dl
   # Humidity: 70  # Humidity
-  # Temperature: 90  # Temperature in Degrees F
+  Temperature: 90  # Temperature in Degrees F
 
 watch_fields:
   - pm
