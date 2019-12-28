@@ -2,6 +2,8 @@ name: Poll Purple Air every 30 minutes
 on:
   schedule:
     - cron:  '0 * * * *'
+  push:
+    - master
 jobs:
   run-poll:
     name: Fetch Purple Air data
