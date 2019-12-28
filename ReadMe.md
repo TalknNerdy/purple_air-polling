@@ -27,7 +27,7 @@ Go to the Purple Air map and select "DATA.JSON"
 ![Image of Purple Air map](assets/purple_air.png)
 
 In this sample URL, your key is where the _key_ is and the _id_ is where the id is.
-`https://www.purpleair.com/data.json?key=_key_&show=_id_`
+`https://www.purpleair.com/data.json?key=_key_&show=_id_`j
 
 ### B. Set Github Secrets
 Go to your forked repo's Secrets (Settings -> Secrets) and set the env variables respectively
@@ -40,7 +40,7 @@ ENV variables
 
 You can edit the `config.yaml` file to adjust the alert limits for any of the parameters of your json response.
 
-- `watch_values`: These values must match exactly the values in the `"fields"` attribute of the JSON response.
+- `watch_fields`: These values must match exactly the values in the `"fields"` attribute of the JSON response.
 - `alert_value`: This defines the alert limit (if the value is greater than this, the alert will trigger).
 
 # Is this free?

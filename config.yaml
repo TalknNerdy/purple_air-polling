@@ -1,9 +1,9 @@
 alert_value:
-  default: 90
+  default: 55
   pm_10: 10
   age: 500
 
-watch_values:
+watch_fields:
   - pm
   - age
   - pm_0

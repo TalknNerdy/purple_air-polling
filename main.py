@@ -14,7 +14,7 @@ if not(len(data)):
   exit()
 
 def select_bad_id(data, config_values):
-  for watch in config_values["watch_values"]:
+  for watch in config_values["watch_fields"]:
     expected = config_values["alert_value"].get(watch) or config_values["alert_value"]["default"]
     if data.get(watch) > expected:
       return watch
