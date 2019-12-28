@@ -1,8 +1,10 @@
+
+import platform
+print('version', platform.python_version())
+
 import app.ifttt as ifttt
 import app.purple_air as purple_air
 import config
-import platform
-print('version', platform.python_version())
 
 config_values = config.load_config()
 data = purple_air.get_data()
