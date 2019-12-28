@@ -11,14 +11,14 @@ if not(len(data)):
 
 def select_bad_id(data, config_values):
   for watch in config_values["watch_fields"]:
-    expected = config_values["alert_value"].get(watch) or config_values["alert_value"]["default"]
-    if data.get(watch) > expected:
-      return watch
+    threshold = config_values["alert_value"].get(watch) or config_values["alert_value"]["default"]
+    if data.get(watch) > threshold:
+      return (watch, threshold)
   return None
 
-watch = select_bad_id(data, config_values)
+bad_id = select_bad_id(data, config_values)
 
-if watch:
-  ifttt.send_alert(watch, data[watch])
+if bad_id:
+  ifttt.send_alert(bad_id[0], data[bad_id[0]], bad_id[1])
 else:
   print("no alert")
