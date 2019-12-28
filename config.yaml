@@ -8,7 +8,7 @@ alert_value:
   p4: 20    # Particles >=2.5µm: count/dl
   p5: 10    # Particles >=5.0µm: count/dl
   p6: 4     # Particles >=10.0µm:count/dl
-  pm_0: 1   # Test
+  "pm_0": 1   # Test
 
 watch_fields:
   - pm
