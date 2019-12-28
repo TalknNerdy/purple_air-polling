@@ -46,5 +46,8 @@ You can edit the `config.yaml` file to adjust the alert limits for any of the pa
 # Is this free?
 Yes, probably. The script takes about 30s to run, so I would expect this to consume 400 minutes of your free 2,000 Github Action minutes.
 
+# How do I change the polling frequency?
+Edit the file here on line 5: `.github/workflows/poll.yml#L5`
+
 # Questions?
 Make an Issue
