@@ -1,0 +1,23 @@
+alert_value:
+  default: 90
+  pm_10: 10
+  age: 500
+
+watch_values:
+  - pm
+  - age
+  - pm_0
+  - pm_1
+  - pm_2
+  - pm_3
+  - pm_4
+  - pm_5
+  - pm_6
+  - pm1
+  - pm_10
+  - p1
+  - p2
+  - p3
+  - p4
+  - p5
+  - p6
