@@ -4,7 +4,6 @@ import os
 
 # See sample.json to understand format
 def get_data():
-
   id = os.environ['purpleair_ID']
   key = os.environ['purpleair_KEY']
   params = (
@@ -21,7 +20,4 @@ def get_data():
   return _format_data(data)
 
 def _format_data(data):
-  h = {}
-  for i, field in enumerate(data["fields"]):
-    h[field] = data["data"][0][i]
-  return h
+  return dict(zip(data["fields"], data["data"][0]))

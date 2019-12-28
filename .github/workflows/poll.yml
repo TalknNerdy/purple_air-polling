@@ -2,7 +2,7 @@ name: Poll Purple Air every 60 minutes
 on:
   push:
   schedule:
-    - cron:  '0 */1 * * *'
+    - cron: '0 */1 * * *'
 jobs:
   run-poll:
     name: Fetch Purple Air data
