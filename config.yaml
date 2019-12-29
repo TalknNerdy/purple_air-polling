@@ -1,15 +1,14 @@
 alert_value:
   default: 55
-  # pm_10: 10 # Arbitrary test value
-#   age: 1440 # Time in minutes since last reported measurement (24 hours = 1440 minutes)
-#   p1: 5000  # Particles >=0.3µm: count/dl
-#   p2: 2000  # Particles >=0.5µm: count/dl
-#   p3: 200   # Particles >=1.0µm: count/dl
-#   p4: 20    # Particles >=2.5µm: count/dl
-#   p5: 10    # Particles >=5.0µm: count/dl
-#   p6: 4     # Particles >=10.0µm:count/dl
-#   Humidity: 70  # Humidity
-#   Temperature: 90  # Temperature in Degrees F
+  age: 1440 # Time in minutes since last reported measurement (24 hours = 1440 minutes)
+  p1: 5000  # Particles >=0.3µm: count/dl
+  p2: 2000  # Particles >=0.5µm: count/dl
+  p3: 200   # Particles >=1.0µm: count/dl
+  p4: 20    # Particles >=2.5µm: count/dl
+  p5: 10    # Particles >=5.0µm: count/dl
+  p6: 4     # Particles >=10.0µm:count/dl
+  Humidity: 70  # Humidity
+  Temperature: 90  # Temperature in Degrees F
 
 watch_fields:
   - pm
