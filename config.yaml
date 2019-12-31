@@ -1,5 +1,5 @@
 alert_value:
-  default: 55
+  "default": 55
   "age": 1440 # Time in minutes since last reported measurement (24 hours = 1440 minutes)
   "p1": 5000  # Particles >=0.3µm: count/dl
   "p2": 2000  # Particles >=0.5µm: count/dl
