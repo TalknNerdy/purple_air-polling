@@ -10,15 +10,20 @@ if not(len(data)):
   exit()
 
 def select_bad_id(data, config_values):
-  for watch in config_values["watch_fields"]:
-    threshold = config_values["alert_value"].get(watch) or config_values["alert_value"]["default"]
-    if data.get(watch) > threshold:
-      return (watch, threshold)
+  watch_fields = config_values["watch_fields"]
+  for field, field_config in watch_fields.items():
+    field_config = field_config or {}
+    threshold = field_config.get("alert_above") or config_values["default_alert_above"]
+    if data.get(field) > threshold:
+      title = field_config.get("title", field)
+      unit = field_config.get("unit")
+      value = " ".join(filter(None, (str(data.get(field)), unit)))
+      return (title, value, threshold)
   return None
 
 bad_id = select_bad_id(data, config_values)
 
 if bad_id:
-  ifttt.send_alert(bad_id[0], data[bad_id[0]], bad_id[1])
+  ifttt.send_alert(bad_id[0], bad_id[1], bad_id[2])
 else:
   print("no alert")

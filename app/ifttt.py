@@ -11,4 +11,5 @@ def send_alert(id, value, threshold):
   key = os.environ['ifttt_KEY']
   url = f'https://maker.ifttt.com/trigger/{event_name}/with/key/{key}'
   response = requests.post(url, headers=headers, data=json.dumps({'value1': id, 'value2': value, 'value3': threshold}))
-  print("sent alert", id, value)
+  print(response.text)
+  print("sent alert", id, value, threshold)

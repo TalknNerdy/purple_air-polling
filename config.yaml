@@ -1,32 +1,47 @@
-alert_value:
-  "default": 55
-  "age": 1440 # Time in minutes since last reported measurement (24 hours = 1440 minutes)
-  "p1": 5000  # Particles >=0.3µm: count/dl
-  "p2": 2000  # Particles >=0.5µm: count/dl
-  "p3": 200   # Particles >=1.0µm: count/dl
-  "p4": 20    # Particles >=2.5µm: count/dl
-  "p5": 10    # Particles >=5.0µm: count/dl
-  "p6": 4     # Particles >=10.0µm:count/dl
-  "Humidity": 70  # Humidity
-  "Temperature": 90  # Temperature in Degrees F
-
-watch_fields:
-  - pm
-  - age
-  - pm_0
-  - pm_1
-  - pm_2
-  - pm_3
-  - pm_4
-  - pm_5
-  - pm_6
-  - pm1
-  - pm_10
-  - p1
-  - p2
-  - p3
-  - p4
-  - p5
-  - p6
-  - Humidity
-  - Temperature
+default_alert_above: 55
+watch_fields: 
+  Humidity: 
+    alert_above: 70
+  Temperature: 
+    alert_above: 90
+    unit: ºF
+  age: 
+    alert_above: 0
+    title: "Time since last reported measurement"
+    unit: minutes
+  p1: 
+    alert_above: 5000
+    title: "Particles >=0.3µm"
+    unit: "counts per deciliter"
+  p2: 
+    alert_above: 2000
+    title: "Particles >=0.5µm"
+    unit: "counts per deciliter"
+  p3: 
+    alert_above: 200
+    title: "Particles >=1.0µm"
+    unit: "counts per deciliter"
+  p4: 
+    alert_above: 20
+    title: "Particles >=2.5µm"
+    unit: "counts per deciliter"
+  p5: 
+    alert_above: 10
+    title: "Particles >=5.0µm"
+  p6: 
+    alert_above: 4
+    title: "Particles >=10.0µm"
+    unit: "counts per deciliter"
+  pm: ~
+  pm1: ~
+  pm_0: ~
+  pm_1: ~
+  pm_10: 
+    alert_above: 10
+    title: "Arbitrary test value"
+    unit: "counts per deciliter"
+  pm_2: ~
+  pm_3: ~
+  pm_4: ~
+  pm_5: ~
+  pm_6: ~
