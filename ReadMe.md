@@ -60,7 +60,8 @@ ENV variables
 You can edit the `config.yaml` file to adjust the alert limits for any of the parameters of your json response.
 
 - `watch_fields`: These values must match exactly the values in the `"fields"` attribute of the JSON response.
-- `alert_value`: This defines the alert limit (if the value is greater than this, the alert will trigger).
+- `alert_above`: alert limit (if the value is greater than this, the alert will trigger).
+- `default_alert_above`: default alert limit (if the value is greater than this, the alert will trigger for any fields that are watched, but dont have a specific alert value defined).
 
 # Is this free?
 
