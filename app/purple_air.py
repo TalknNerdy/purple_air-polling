@@ -17,8 +17,9 @@ def get_data():
   elif not(response.status_code == 200):
     print("purple_air - unknown error", response.text)
     return {}
-
-  data = json.loads(response.text)
+  text = response.text
+  print(f"purple_air status={response.status_code}; text={text}")
+  data = json.loads(text)
 
   return _format_data(data)
 
