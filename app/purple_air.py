@@ -1,6 +1,7 @@
 import requests
 import json 
 import os
+import re
 
 # See sample.json to understand format
 def get_data():
@@ -19,6 +20,9 @@ def get_data():
     return {}
   text = response.text
   print(f"purple_air status={response.status_code}; text={text}")
+
+  # sometimes they put a *** instead of the id, making the JSON invalid
+  re.sub(r'\*{3}', '\"***\"', text)
   data = json.loads(text)
 
   return _format_data(data)
