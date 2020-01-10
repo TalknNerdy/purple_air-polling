@@ -10,26 +10,26 @@ watch_fields:
     title: "Time since last reported measurement"
     unit: minutes
   p1: 
-    alert_above: 5000
+    alert_above: 1000
     title: "Particles >=0.3µm"
     unit: "counts per deciliter"
   p2: 
-    alert_above: 2000
+    alert_above: 1000
     title: "Particles >=0.5µm"
     unit: "counts per deciliter"
   p3: 
-    alert_above: 200
+    alert_above: 100
     title: "Particles >=1.0µm"
     unit: "counts per deciliter"
   p4: 
-    alert_above: 20
+    alert_above: 8
     title: "Particles >=2.5µm"
     unit: "counts per deciliter"
   p5: 
-    alert_above: 10
+    alert_above: 4
     title: "Particles >=5.0µm"
   p6: 
-    alert_above: 4
+    alert_above: 2
     title: "Particles >=10.0µm"
     unit: "counts per deciliter"
   pm: ~
